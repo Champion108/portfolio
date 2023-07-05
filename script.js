@@ -34,3 +34,7 @@ window.addEventListener('scroll',function(){
         }
     })
 })
+
+let u= "https://formsubmit.co/champion561997@gmail.com"
+let form = document.getElementById("form")
+form.setAttribute('action', u)
