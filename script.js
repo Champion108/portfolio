@@ -38,3 +38,58 @@ window.addEventListener('scroll',function(){
 let u= "https://formsubmit.co/champion561997@gmail.com"
 let form = document.getElementById("form")
 form.setAttribute('action', u)
+
+tl=gsap.timeline();
+
+let wid=[75,85,60,30,55,60];
+
+let ski= document.getElementsByClassName("skill-inner-line");
+let out= document.getElementsByClassName("skill-outer-line")[0];
+
+let skill=Array.from(ski)
+let e= out.offsetWidth;
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(skill[0],{
+    ease: Expo.easeInOut,
+    width:(wid[0]/100)*e,
+    duration:1,
+    scrollTrigger:skill[0],
+})
+
+gsap.to(skill[1],{
+    ease: Expo.easeInOut,
+    width:(wid[1]/100)*e,
+    duration:1,
+    scrollTrigger:skill[1],
+})
+
+gsap.to(skill[2],{
+    ease: Expo.easeInOut,
+    width:(wid[2]/100)*e,
+    duration:1,
+    scrollTrigger:skill[2],
+})
+
+gsap.to(skill[3],{
+    ease: Expo.easeInOut,
+    width:(wid[3]/100)*e,
+    duration:1,
+    scrollTrigger:skill[3],
+})
+
+gsap.to(skill[4],{
+    ease: Expo.easeInOut,
+    width:(wid[4]/100)*e,
+    duration:1,
+    scrollTrigger:skill[4],
+})
+
+gsap.to(skill[5],{
+    ease: Expo.easeInOut,
+    width:(wid[5]/100)*e,
+    duration:1,
+    scrollTrigger:skill[5],
+})
