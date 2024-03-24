@@ -41,13 +41,14 @@ form.setAttribute('action', u)
 
 tl=gsap.timeline();
 
-let wid=[75,85,60,30,55,60];
+let wid=[75,75,70,60,65,70];
 
+const anime = () =>{
 let ski= document.getElementsByClassName("skill-inner-line");
 let out= document.getElementsByClassName("skill-outer-line")[0];
 
 let skill=Array.from(ski)
-let e= out.offsetWidth;
+let e = out.offsetWidth;
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -93,3 +94,7 @@ gsap.to(skill[5],{
     duration:1,
     scrollTrigger:skill[5],
 })
+}
+
+anime()
+window.onresize = anime;
