@@ -39,6 +39,7 @@ let u= "https://formsubmit.co/champion561997@gmail.com"
 let form = document.getElementById("form")
 form.setAttribute('action', u)
 
+/*
 tl=gsap.timeline();
 
 let wid=[75,75,70,60,65,70];
@@ -50,7 +51,7 @@ let out= document.getElementsByClassName("skill-outer-line")[0];
 let skill=Array.from(ski)
 let e = out.offsetWidth;
 
-
+/*
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(skill[0],{
@@ -97,4 +98,4 @@ gsap.to(skill[5],{
 }
 
 anime()
-window.onresize = anime;
+window.onresize = anime;*/
